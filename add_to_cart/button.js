@@ -10,11 +10,20 @@ button.addEventListener("click", () => {
     
         const btn = document.createElement("button");
         btn.classList.add("btn1")
-        btn.innerText = "show";
+        show.addEventListener("click", ()=>{
+            const btn2 = document.createElement("button");
+        })
+        
+        
+        
         
         container.appendChild(btn)
         
+        
+        
     }
 
-
+  
 })
+
+
