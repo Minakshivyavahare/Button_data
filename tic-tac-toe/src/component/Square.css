@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    transition: 2.9s;
+}
+td{
+    height: 150px;
+    width: 150px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 100px;
+    color: rgb(216, 223, 225);
+    cursor: pointer;
+    font-weight: bolder;
+    box-shadow: 0 0 45px;
+    transition: 0.9s;
+    
+}
+table{
+    background-color: brown;
+   margin-left: 35%;
+   margin-top: 3%;
+   transition: 0.9s;
+   
+}
+h1{
+    color: #130c97;
+    font-weight: bolder;
+    font-size: 45PX;
+    transition: 0.9s;
+}
+button{
+    padding: 10px;
+    padding-left: 10px;
+    margin-top: 1%;
+    margin-left: 5%;
+    padding-right: 20px;
+    font-size: 20px;
+    background-color: #ab6fd8;
+    cursor: pointer;
+    color: #130c97;
+    box-shadow:  0 0 50px;
+    font-weight: bolder;
+    transition: 0.9;
+
+}
