@@ -1,17 +1,13 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 .navbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 75px;
-    background-color: #00828c;
+    background: #2e158c;
     color: white;
 }
-.logo{
+/* .logo{
 
 }
 .nav-links{
@@ -56,4 +52,4 @@
        
     }
 }
-    
+     */
