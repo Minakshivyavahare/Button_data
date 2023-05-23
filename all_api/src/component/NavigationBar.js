@@ -1,6 +1,7 @@
 import React from 'react';
-import {  Container, Nav, Navbar } from 'react-bootstrap';
+import {  Button, Container, Form, Image, Nav, Navbar } from 'react-bootstrap';
  import { LinkContainer } from 'react-router-bootstrap';
+ import image1 from './3.jpg'
  
 
 const NavigationBar = () => {
@@ -9,7 +10,9 @@ const NavigationBar = () => {
     <Container className='container'>
     <Navbar  variant='dark' expand="lg" className='navbar'>
     <Container>
-        <Navbar.Brand href="/posts" style={{'color':'orange','fontSize':'1.5rem','wordSpacing':'1px','letterSpacing':'2px','marginLeft':'5px'}}>API GROUPS</Navbar.Brand>
+    <Image src={image1} height="40px" width='50px' rounded='5px'/>
+        <Navbar.Brand href="/posts" style={{'color':'balck','fontSize':'1.5rem','wordSpacing':'1px','letterSpacing':'2px','marginLeft':'8px'}}>API GROUPS</Navbar.Brand>
+        
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -28,11 +31,22 @@ const NavigationBar = () => {
                 </LinkContainer> 
                 
             </Nav>
+            
         </Navbar.Collapse>
+        <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-primary">Search</Button>
+          </Form>
     </Container>
 </Navbar>
+
 </Container>
   )
 }
 
-export default NavigationBar
+export default NavigationBar;

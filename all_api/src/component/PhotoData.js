@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Card, Col, Container, Row, } from 'react-bootstrap'
-// import Image from '.src/component/1.jpg'
+
 
 const PhotoData = () => {
   const [apiData, setApiData] = useState('')
@@ -24,7 +24,7 @@ const PhotoData = () => {
             return (
               <Col lg={4} className='mt-4'>
                 <Card style={{ 'border': '5px solid black', "borderRadius": "10px", "transition": "1.0s ease-in-out", "box-shadow": "0 15px 50px" }}>
-                {/* <Card.Img variant="top" src={Image} height="200vh" style={{"boxShadow":"0 10px 50px"}} /> */}
+                <Card.Img variant="top" src={apiDetails.url} height="200vh" style={{"boxShadow":"0 10px 50px"}} />
                   <Card.Body>
                     <Card.Title>AlbumId:{apiDetails.albumId}</Card.Title>
                     <h6 style={{ "color": "red" }}>Id:{apiDetails.id}</h6>

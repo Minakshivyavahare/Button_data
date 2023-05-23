@@ -24,7 +24,7 @@ const TodosData = () => {
                             <Card.Body>
                                 <Card.Title>UserId:{apiDetails.userId}</Card.Title>
                                 <h6>Id:{apiDetails.id}</h6>
-                                <Card.Text style={{"fontStyle":"italic","background":'pink',"marginTop":"30px"}}>
+                                <Card.Text style={{"fontStyle":"italic","background":'#C71585 ',"marginTop":"30px"}}>
                                    {apiDetails.title}
                                     <h3 className="mt-3" >{apiDetails.completed}</h3>
                                 </Card.Text>
@@ -40,4 +40,4 @@ const TodosData = () => {
   )
 }
 
-export default TodosData
+export default TodosData;

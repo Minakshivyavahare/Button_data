@@ -7,7 +7,7 @@ const CardData = (props) => {
     <>
       <Card
         style={{ width: "18rem", margin: "5px", border: "3px solid brown","borderRadius":"10px","marginLeft":'400px',"marginTop":'15px',"box-shadow":"0 15px 50px","transition": "1.0s ease-in-out"
-        ,"padding":"10px"}} >
+        ,"padding":"10px" ,height:"300px"}} >
        
       
         
@@ -19,6 +19,7 @@ const CardData = (props) => {
           </Card.Title>
           
           <Card.Text style={{fontFamily:'Robotica',"fontStyle":'italic'}}>{props.result.body}</Card.Text>
+          
           
         </Card.Body>
       </Card>
