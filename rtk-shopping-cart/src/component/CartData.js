@@ -5,6 +5,7 @@ import {
     removeItem,
     increaseItemQuantity,decreaseItemQuantity
   } from "../features/cartSlice";
+import { Link } from 'react-router-dom';
   
 
 const CartData = () => {
@@ -133,10 +134,11 @@ const CartData = () => {
                       </ul>
     
                       <button
+                     
                         type="button"
-                        className="btn btn-primary btn-lg btn-block"
-                      >
-                        Go to checkout
+                        className="btn btn btn-lg btn-block">
+                      <Link to="/checkout">Go to checkout</Link>
+                       
                       </button>
                     </div>
                   </div>

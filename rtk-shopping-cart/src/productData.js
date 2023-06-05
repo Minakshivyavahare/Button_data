@@ -34,4 +34,25 @@ export default [
       img: "https://www.91-img.com/gallery_images_uploads/3/d/3df5ca6a9b470f715b085991144a5b76e70da975.JPG?tr=h-550,w-0,c-at_max",
       quantity: 1,
     },
+    {
+      id: 6,
+      title: "Shirt",
+      price: 800.0,
+      img: "https://m.media-amazon.com/images/I/618Wek95laS._AC._SR360,460.jpg",
+      quantity: 1,
+    },
+    {
+      id: 7,
+      title: "Pant",
+      price: 1000.0,
+      img: "https://assets.ajio.com/medias/sys_master/root/20220818/lSh7/62fde20caeb269176182b7d0/-473Wx593H-461394178-green-MODEL.jpg",
+      quantity: 1,
+    },
+    {
+      id: 8,
+      title: "Bag",
+      price: 2000.0,
+      img: "https://m.media-amazon.com/images/I/61dCM74pPiL._SY450_.jpg",
+      quantity: 1,
+    },
   ];

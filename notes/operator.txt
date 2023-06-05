@@ -1,0 +1,28 @@
+Operators are symobols  used  to perform mathematics ,relational operations to perform on operand.
++ , - ,* ,/ % (remainder)  , ++ ,--, **(exponantial Operators)
+
+operator precedence
+first / , * , + ,- using with bracket()
+
+
+//Assignment Operators
+=, +=, -=, *= , /=, %= 
+
+
+//comparion operator
+> , < ,>= ,<= , ==, ===(it check value as well as datatypes), !=, !==(strict not equal)
+
+//logical operator
+ && , || ,
+
+ && is true when both operands are true
+
+ || is true if one operand is true
+
+ ! true then it return false , false it returns true
+
+
+
+ //ternary Operators
+
+ () ? () : ()

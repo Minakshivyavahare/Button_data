@@ -1,0 +1,15 @@
+String is a sequence of character.
+1.String charAt() used to check each character.
+2.String length is used to check length it start with 1.
+String is case sensitive HELLO and hello is different.
+3,4.String toUpperCase() , toLowerCase()
+5.concat() method.
+6.replace(2 argument) method.
+7.split("") method.
+8.slice(firstIndex and lastIndex) it extract part of string
+9.trim() removes extra spaces.
+10.trimStart() removes beginning spaces.
+11 trimEnd() removes whitespace from end of the string
+12. replaceAll() 
+13.subString()
+14.subStr()

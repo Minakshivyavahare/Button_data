@@ -1,0 +1,11 @@
+//Datatypes in javascript
+//8
+
+String
+NUmber
+bigInt
+undefined
+null
+boolean
+Symbol 
+object

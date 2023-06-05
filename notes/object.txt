@@ -1,0 +1,10 @@
+Object we use key value pair.
+name : "vijay"  full name = vijay is property
+key   =value
+
+
+accessing object using 2 types
+. Dot notation
+[] bracket
+
+accessing object method using . notation

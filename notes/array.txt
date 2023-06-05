@@ -1,0 +1,18 @@
+Arrays are used to store multiple values in a single variable.
+You can also create an array, and then provide the elements:
+Array index start with 0.
+The JavaScript method toString() converts an array to a string of (comma separated) array values.
+The length property of an array returns the length of an array (the number of array elements).
+The length property is always one more than the highest array index.
+
+Push method.
+To add a new element to an array is using the push() method:
+New element can also be added to an array using the length property:
+
+WARNING !
+Adding elements with high indexes can create undefined "holes" in an array:array[6]
+
+WARNING !!
+If you use named indexes, JavaScript will redefine the array to an object.
+const person = [];
+person["firstName"] = "John";

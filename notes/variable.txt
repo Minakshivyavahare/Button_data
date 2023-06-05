@@ -1,0 +1,25 @@
+1. The variable is container to store data.
+2. If we declare variable with const we cannot change the value.
+3. and in let we change the value.
+4. var carName we declare variable;
+5.carName ="volvo" assigning the value.
+6. we assign multiple value in same line.
+let person="John" carName="Volve" price=200.
+
+var keyword we can redeclare.
+let ,const we cannot redeclare.
+(Identifier 'carName' has already been declared)
+
+7. $ and _ also used.
+
+
+//Let var const
+Var has a function scope.
+let and const block scope.
+
+var and let we reassign a value.
+but in const we cannot reassign value.
+
+var we redeclare.
+but let and const not redeclare.
+

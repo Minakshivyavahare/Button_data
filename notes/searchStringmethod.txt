@@ -1,0 +1,12 @@
+1. indexOf()    return the first occurance of string.  
+if word not find it return -1 and start with 0.
+
+ 2. lastIndexOf() checks last value in string.
+
+ 3.search()  return the index value. and if not find it show (-1)
+
+ 4.match() return the array and if value not find it return null.
+
+ 5. includes() it return true if value included otherwise false.
+
+ 6.startsWith(value, position) it return true if find not find it returns false

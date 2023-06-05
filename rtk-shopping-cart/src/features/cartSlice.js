@@ -6,6 +6,7 @@ const initialState = {
     items : productData,
     totalQuantity : 0,
     totalPrice : 0,
+    searchText : ''
     
 }
 
@@ -66,9 +67,12 @@ export const cartSlice = createSlice({
                 }
                 return item;
             })
+        },
+        addSeacrhText : (state,action) =>{
+           state.searchText = action.payload;
         }
     }   
 })
 
-export const {addToCart,getCartTotal,removeItem,increaseItemQuantity,  decreaseItemQuantity} = cartSlice.actions; 
+export const {addToCart,getCartTotal,removeItem,increaseItemQuantity,  decreaseItemQuantity, addSeacrhText} = cartSlice.actions; 
 export default cartSlice.reducer;

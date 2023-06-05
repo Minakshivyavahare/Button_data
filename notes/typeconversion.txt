@@ -1,0 +1,19 @@
+1.there are two types of conversion.
+2.Implicit and explicit
+2.Type conversion/type casting/ type coersion.
+3.string conversion ,number conversion, boolean conversion
+4. when we add '8' any number 4 with string it will automatically convert the string.
+5. (-,*, /) we with string it will gives right answer.
+
+6. when we subtract 1 string from another string output NaN.
+7. true (1) and false (0).
+8. we perform (-,*, /) with bollean it will gives correct value.
+9. null is (0) when used with number.
+10. undefined used with number, null, boolean gives NaN.
+
+
+
+Explicit Type conversion
+
+1.Number conversion we use parseInt() method.
+2.String toString() method.
