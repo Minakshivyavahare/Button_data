@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import GetData from './GetData';
+
 import SelectData from './component/SelectData';
+import GetData from './component/GetData';
 
 function App() {
   return (
     <div className="App">
       <GetData/>
-      {/* <SelectData/> */}
+      <SelectData/>
     </div>
   );
 }

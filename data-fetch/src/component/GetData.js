@@ -1,11 +1,11 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Card, Col, Row } from 'react-bootstrap'
+import { Card} from 'react-bootstrap'
 
 const GetData = () => {
   const [userData, setData] = useState([])
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/users")
+    axios.get("https://fakestoreapi.com/products")
       .then((response) => {
         console.log(response);
         setData(response.data)
@@ -22,10 +22,10 @@ const GetData = () => {
               <Card.Body>
                 <Card.Title>Id: {data.id}</Card.Title>
                 <Card.Text>
-                  Name: {data.name}
+                  Title: {data.title}
                 </Card.Text>
                 <Card.Text>
-                  Email: {data.email}
+                  Price: {data.price}
                 </Card.Text>
 
               </Card.Body>

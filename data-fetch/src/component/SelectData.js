@@ -3,20 +3,20 @@ import React, { useState } from 'react'
 const SelectData = () => {
     const[data,setData] = useState('')
     
-    const changeOption = (e) =>{
-        console.log(e);
-    }
+    
     const changeValue = (e) =>{
+        setData(e.target.value)
          console.log(e.target.value);
     }
     
   return (
     <div>
-        <select onChange={changeValue}>
+        <select value={data} onChange={changeValue}>
             <option>Select</option>
-            <option value="A">A to Z</option>
-            <option value="Z">Z to A</option>
+            <option>A to Z</option>
+            <option>Z to A</option>
         </select>
+        <h4>{data}</h4>
     </div>
   )
 }
