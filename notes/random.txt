@@ -1,0 +1,4 @@
+Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive).
+
+min value inculded.
+max value not included.

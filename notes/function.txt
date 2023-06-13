@@ -1,0 +1,33 @@
+1.Function Declaration
+A function is a block of code that performs a specific task. 
+Dividing a complex problem into smaller chuncks.
+It is used for reusing the code.
+hoisting is work.
+
+function name(){
+
+}
+
+
+2.Function Expression
+The main differnece between function expression and declaration is function name is 
+ommited to create anonymus function.
+hoisting is not working.
+
+3.return ke baad kuch bhi execute nhi hota h.
+
+4.nested function
+
+ander wala function humesha andar hi call hoga.
+bahar wala function bahar call hoga.
+
+
+5.self invoking function
+
+A self-invoking expression is invoked (started) automatically, without being called.
+
+Function expressions will execute automatically if the expression is followed by ().
+
+You cannot self-invoke a function declaration.
+
+You have to add parentheses around the function to indicate that it is a function expression:

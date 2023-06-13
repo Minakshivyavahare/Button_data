@@ -1,0 +1,13 @@
+JSON is javascript object notation.
+It is a data representation format.
+Application and server(web Application,mobile application)
+{
+    "name" :"Hari"
+}
+key always in double quotes.
+it is language independent.
+Web service and api use json data.
+We can store Number,String,boolean,Array,object and null.
+
+Object convert to json we use Stringify method.
+json convert to Object we use parse method.

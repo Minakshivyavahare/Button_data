@@ -1,0 +1,8 @@
+Uber,Zomata,Ola in this app we see google map.
+Zomato cannot use directly google maps.
+Zomato---------------------google map api---------------------google map
+
+
+Fetch api
+fetch api is the easiest way to make any http request in js.
+Without using Ajax and XMLHTTPREQUEST.
