@@ -1,15 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
 
-import SelectData from './component/SelectData';
+
 import GetData from './component/GetData';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbar from './component/Navbar';
+import SigleProduct from './component/SigleProduct';
 
 function App() {
   return (
-    <div className="App">
-      <GetData/>
-      <SelectData/>
-    </div>
+    
+     <BrowserRouter>
+      <Navbar/>
+     <Routes>
+      <Route path='/' element={<GetData/>}/>
+      <Route path='/single/:id' element={<SigleProduct/>}/>
+     </Routes>
+     
+
+   
+   
+      </BrowserRouter>  
   );
 }
 

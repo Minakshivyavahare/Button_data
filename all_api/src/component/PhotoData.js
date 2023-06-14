@@ -24,7 +24,7 @@ const PhotoData = () => {
             return (
               <Col lg={4} className='mt-4'>
                 <Card style={{ 'border': '5px solid black', "borderRadius": "10px", "transition": "1.0s ease-in-out", "box-shadow": "0 15px 50px" }}>
-                <Card.Img variant="top" src={apiDetails.url} height="200vh" style={{"boxShadow":"0 10px 50px"}} />
+                <Card.Img variant="top" src={apiDetails.image} height="200vh" />
                   <Card.Body>
                     <Card.Title>AlbumId:{apiDetails.albumId}</Card.Title>
                     <h6 style={{ "color": "red" }}>Id:{apiDetails.id}</h6>

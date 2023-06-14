@@ -21,4 +21,6 @@ const SelectData = () => {
   )
 }
 
+const result = apiResult.data.sort((a,b) => a.title.localeCompare(b.title))
+   setProductData(result)
 export default SelectData
