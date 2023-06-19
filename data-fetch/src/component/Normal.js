@@ -1,17 +1,16 @@
-import React, { useState } from 'react'
+
+import React, { useContext, useState } from 'react'
+import { ShopContext } from '../context/ShopContextProvider'
+import { Button } from 'react-bootstrap'
+
 
 const Normal = () => {
-    const[array,setArray] = useState([])
-
-    const checkData = () =>{
-        const newData = {id:1,name:'Apple'}
-       setArray([...array ,newData])
-       console.log(newData.length);
-    }
+   const{ addToCart}  = useContext(ShopContext)
+   
   return (
-    <div>
-        <button onClick={checkData}>Add Data</button>
-    </div>
+    <>
+     <Button onClick={() =>addToCart()}>Add to Cart</Button>
+    </>
   )
 }
 

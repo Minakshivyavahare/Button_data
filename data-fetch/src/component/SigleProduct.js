@@ -1,32 +1,23 @@
 
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Button, Card, Col, Container, Row, Stack } from 'react-bootstrap'
 import { Link, useParams } from 'react-router-dom'
+import { ShopContext } from '../context/ShopContextProvider'
 
 
 
 const SigleProduct = (props) => {
 
   const [product, setProduct] = useState([])
-  const [uniqueArray, setUniqueArray] = useState([])
-
-  // let myArr = [];
-  // if(!myArr.includes(product.id)){
-  //   myArr.push(product.id)
-
-  //   console.log(`data added in the array ${product.id}`);
-  //   console.log(myArr.length);
-  // }else{
-  //   console.log(`data already exist ${product.id}`);
-  // }
-
-
+  
+  const Globalstate = useContext(ShopContext)
+  const dispatch = Globalstate.dispatch;
+  console.log(Globalstate);
 
   let params = useParams()
-  // console.log(params);
-  // console.log(product);
-
+  //console.log(product);
+  
   useEffect(() => {
     getAllData()
 
@@ -37,21 +28,16 @@ const SigleProduct = (props) => {
     setProduct(apiResult.data)
 
   }
+  
+  // const addData = () => {
+  //   // const newData = { ...product }
+  //   // console.log(newData);
+  //   // setUniqueArray([...uniqueArray,product.id])
+    
+     
+  // }
 
-  const addData = () => {
-    const newData = { ...product }
-
-    newData.find(product.id)
-
-   console.log(newData);
-    //  setUniqueArray([...uniqueArray,product.id])
-    //  console.log(newData);
-    //  setUniqueArray(newData)
-    //   console.log(product.id);
-    //   console.log(uniqueArray.length);
-    //   console.log(product);
-  }
-
+  
   return (
     <Container>
      
@@ -63,8 +49,8 @@ const SigleProduct = (props) => {
               <Button as="a" variant="primary">
                 BUY NOW
               </Button>
-              <Link to={`/cart/${product.id}`}>
-                <Button className='h-20' onClick={addData}><b>ADD TO CART</b></Button>
+              <Link to={`/cart`}>
+                <Button className='h-20' onClick={() =>dispatch({type:'ADD',payload:product})}><b>ADD TO CART</b></Button>
               </Link>
 
             </Stack>
