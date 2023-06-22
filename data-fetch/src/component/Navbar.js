@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Nav } from 'react-bootstrap'
+import { Container, Nav } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap';
 import { ArrowRight} from 'react-bootstrap-icons';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" href="#" style={{color:'white'}}>Ecommerce App</a>
+        <a class="navbar-brand" href="/" style={{color:'white'}}>Ecommerce App</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

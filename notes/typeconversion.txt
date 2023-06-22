@@ -3,7 +3,7 @@
 2.Type conversion/type casting/ type coersion.
 3.string conversion ,number conversion, boolean conversion
 4. when we add '8' any number 4 with string it will automatically convert the string.
-5. (-,*, /) we with string it will gives right answer.
+5. (-,*, /)  with string it will gives right answer.
 
 6. when we subtract 1 string from another string output NaN.
 7. true (1) and false (0).

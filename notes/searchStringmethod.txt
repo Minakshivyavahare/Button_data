@@ -1,7 +1,7 @@
 1. indexOf()    return the first occurance of string.  
 if word not find it return -1 and start with 0.
 
- 2. lastIndexOf() checks last value in string.
+ 2. lastIndexOf() checks last value in string. start with 0
 
  3.search()  return the index value. and if not find it show (-1)
 

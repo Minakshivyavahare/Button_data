@@ -26,3 +26,10 @@ first / , * , + ,- using with bracket()
  //ternary Operators
 
  () ? () : ()
+
+
+ //optional chaining  (?.)
+ optional chaining is nothing but a syntax.with the use we use 
+ deeply nested chaining. without checking this property exist or not.
+
+ //error nhi aati h

@@ -1,0 +1,2 @@
+babel is js compiler to convert modern js to pervious js.
+when we install react it will automatically install.

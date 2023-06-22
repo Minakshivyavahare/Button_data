@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useContext, useEffect, useState } from 'react'
 import { Button, Card, Col, Container, Image, Row, Table } from 'react-bootstrap'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { ShopContext } from '../context/ShopContextProvider';
 
@@ -14,6 +14,8 @@ const Cart = () => {
   const Globalstate = useContext(ShopContext)
   const state = Globalstate.state
   const dispatch = Globalstate.dispatch
+
+  let totalCartPrice = 0;
   // useEffect(() => {
   //     getAllData()
 
@@ -28,42 +30,71 @@ const Cart = () => {
 
   return (
     <Container>
-      <Row xs={1} style={{ transition: 'all 0.3s' }}>
-        <h4 style={{ textAlign: 'center', padding: '30px' }}><b>SHOPPING CART</b></h4>
 
-        {state.map((item, index) => {
-          return (
+      <h4 style={{ textAlign: 'center', padding: '30px' }}><b>SHOPPING CART</b></h4>
 
-            <Card style={{ marginTop: '30px' }}>
-              <Col>
 
-                <Table style={{}}>
-                  <thead>
-                    <tr >
-                      <th>ITEM</th>
-                      <th>TITLE</th>
-                      <th>PRICE</th>
-                      <th>REMOVE</th>
-                      <th>TOTAL</th>
 
-                    </tr>
-                  </thead>
+      <div className='table-responsive'>
 
-                  <tr style={{ marginBottom: '10px' }}>
-                    <td><Image src={item.image} height="60px" width="70px" roundedCircle /></td>
 
-                    <td>{item.title}</td>
-                    <td>{item.price}</td>
-                    <DeleteIcon fontSize="medium" color="warning" style={{ marginTop: '18px', marginLeft: '20px' }} />
-                  </tr>
-                </Table>
-              </Col>
+        <Table className='table table-bordered' >
+          <thead>
+            <tr >
+              <th>ITEM</th>
+              <th>TITLE</th>
+              <th>PRICE</th>
+              <th>QUANTITY</th>
+              <th>TOTAL PRICE</th>
+              <th>REMOVE</th>
 
-            </Card>
+            </tr>
+          </thead>
+          <tbody>
+            {state.map((item, index) => {
+              totalCartPrice += item.price;
+              return (
+                <tr>
+                  <td width="10%">
+                    <Image src={item?.image?.[0]?.url} height="60px" width="70px" alt='product-image' roundedCircle />
+                  </td>
+                  <td width="15%">{item.name}</td>
+                  <td width="15%">{item.price}</td>
+                  <td width="15%">
+                    <div className='input-group'>
+                      <button type='button' className='input-group-text'>-</button>
+                      <input type="text" className='form-control text-center' value='1' />
+                      <button type='button' className='input-group-text'>+</button>
+                    </div>
+                  </td>
+                  <td  width="15%">{totalCartPrice}</td>
+                  <td width="10%"><DeleteIcon fontSize="medium" color='blue' style={{ marginTop: '18px', marginLeft: '20px' }} /></td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </Table>
 
-          )
-        })}
-      </Row>
+      </div>
+
+
+
+
+
+      <div className='col-md-8' style={{ marginLeft: '52rem' }}>
+        <div className='col-md-4'>
+          <div className='card card-body mt-3'>
+            <h4>Sub Total:</h4>
+            <span className='float-end'>{totalCartPrice}</span>
+
+            <h4>Grand Total:</h4>
+            <span className='float-end'>{totalCartPrice}</span>
+            <hr />
+            <Link to="/checkout" className='btn btn-primary'>Checkout</Link>
+          </div>
+        </div>
+      </div>
+
     </Container>
   )
 }

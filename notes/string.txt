@@ -6,7 +6,7 @@ String is case sensitive HELLO and hello is different.
 5.concat() method.
 6.replace(2 argument) method.
 7.split("") method.
-8.slice(firstIndex and lastIndex) it extract part of string
+8.slice(firstIndex and lastIndex) it extract part of string start with 0 and last me 1 chhod deta h.
 9.trim() removes extra spaces.
 10.trimStart() removes beginning spaces.
 11 trimEnd() removes whitespace from end of the string
