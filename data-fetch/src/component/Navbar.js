@@ -17,17 +17,19 @@ const Navbar = () => {
           <LinkContainer to="/" style={{color:'white'}}>
             <Nav.Link >Home</Nav.Link>
           </LinkContainer>
-          
-          <LinkContainer to="/cart" style={{color:'white' , marginLeft:'15px'}}>
-             
-            <Nav.Link >Cart<ShoppingCartIcon/></Nav.Link>
-            
-          </LinkContainer>
+
           <LinkContainer to="/practice" style={{color:'white' , marginLeft:'15px'}}>
              
-            <Nav.Link >Practice</Nav.Link>
+             <Nav.Link >Practice</Nav.Link>
+             
+           </LinkContainer>
+          
+          <LinkContainer to="/cart" style={{color:'white' , marginLeft:'50rem'}}>
+             
+            <Nav.Link><ShoppingCartIcon fontSize='medium'/></Nav.Link>
             
           </LinkContainer>
+         
         </div>
       </nav>
       

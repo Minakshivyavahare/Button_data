@@ -13,6 +13,7 @@ const ShopContextProvider = (props) => {
      {
        case 'ADD':
            const tempState = state.filter((item) => action.payload.id ===item.id)
+           console.log(action.payload);
            if(tempState.length > 0)
            {
             return state
@@ -20,7 +21,15 @@ const ShopContextProvider = (props) => {
            {
             return [...state,action.payload] 
            }
-          
+
+      case 'INCREMENT':
+        const temp = state+1;
+        console.log(temp);
+        return temp;
+
+      case 'REMOVE':
+         const tempState2= state.filter((item) => item.id !== action.payload.id ) 
+         return tempState2;         
 
         default:
            return state;
