@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 80vh;
+    width: 500vw;
+    display: flex;
+    
+    
+    
+
+}
+.box1{
+    background-color: black;
+   height: 10%;
+   width: 10%;
+   
+    
+    
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-content: stretch;
+    align-items: center;
+    line-height: 8vh;
+    
+    
+}
+ul li  a{
+    color: #ffff;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.box3{
+    background-color: black;
+    height: 10%;
+    width: 10%;
+    color: #ffff;
+    text-align: end;
+    line-height: 8vh;
+}
+ul li a:hover{
+    
+    background: #ccc;
+}
+

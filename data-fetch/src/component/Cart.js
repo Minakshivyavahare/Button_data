@@ -19,7 +19,7 @@ const Cart = () => {
   const Globalstate = useContext(ShopContext);
   const state = Globalstate.state;
   const dispatch = Globalstate.dispatch;
-
+  
   let totalCartPrice = 0;
   // useEffect(() => {
   //     getAllData()

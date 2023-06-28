@@ -9,7 +9,7 @@ import GridViewSharpIcon from "@mui/icons-material/GridViewRounded";
 const GetData = () => {
   const [productData, setProductData] = useState([]);
   const [sortOrder, setOrder] = useState("ascending");
-  const [view, setView] = useState(false);
+  const [view, setView] = useState(true);
 
   useEffect(() => {
     getAllData();
@@ -62,10 +62,11 @@ const GetData = () => {
         }}
       >
         <Col>
-          <button onClick={() => setView(true)}>
-            <GridViewSharpIcon fontSize="small" />
-          </button>
           <button onClick={() => setView(false)}>
+            <GridViewSharpIcon fontSize="small" style={{marginRight:'4px'}} />
+          </button>
+          
+          <button onClick={() => setView(true)}>
             <ViewHeadlineIcon fontSize="small" />
           </button>
         </Col>
@@ -115,7 +116,25 @@ const GetData = () => {
               </Card>
             </Col>
           ) : (
-            <Card.Text>Price: {data.price}</Card.Text>
+            <Row>
+            <Card className="card h-100" style={{ width: "18rem" }}>
+            <Link
+              to={`single/${data.id}`}
+              style={{ textDecoration: "none" }}
+            >
+              <Card.Img
+                variant="top"
+                src={data.image}
+                height="200vh"
+                width="100px"
+              />
+              <Card.Body>
+                <Card.Text>{data.name}</Card.Text>
+                <Card.Text>Price: {data.price}</Card.Text>
+              </Card.Body>
+            </Link>
+          </Card>
+          </Row>
           );
         })}
       </Row>

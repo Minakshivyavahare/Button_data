@@ -1,10 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Container, Nav } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap';
 import { ArrowRight} from 'react-bootstrap-icons';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { ShopContext } from '../context/ShopContextProvider';
 
 const Navbar = () => {
+  
+  const Globalstate = useContext(ShopContext);
+  const dispatch = Globalstate.dispatch;
+  const state = Globalstate.state;
   
   return (
     <div>

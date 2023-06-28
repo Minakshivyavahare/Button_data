@@ -6,11 +6,29 @@
     color: red;
 } */
 
-h1, h2, h3 {
-    color: red;
+#h1{
+    /* 100-900 value */
+    font-weight: normal;
 }
+#h2{
+    font-weight: bold;
+}
+#h3{
+    font-weight: bolder;
+}
+/* h1, h2, h3 {
+    color: red;
+    text-decoration: line-through;
+} */
 
 button{
     background-color: green;
+}
+p{
+    text-align: start;
+    text-decoration: red underline;
+}
+#p1{
+    font-size: 25px;
 }
 

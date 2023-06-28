@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.navbar {
+    background-color: purple;
+    width: 100vw;
+    height: 60px;
+    
+}
+.navbar ul{
+    
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    line-height: 60px;
+    
+}
+
+    @media only screen and (min-width: 320px) and (max-width: 500px) {
+        .navbar ul li {
+          width: 50%;
+         display: none;
+         
+          
+          
+          
+        }
+  }
+
+
+
+
