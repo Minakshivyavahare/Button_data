@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            padding: 34px;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            padding: 0 43px;
+        }
+        header{
+            background-color: black;
+            color: white;
+        }
+        .left{
+            
+            height: 80vh;
+            width: 40vw;
+            background-color: aquamarine;
+        }
+        .right{
+            
+            height: 80vh;
+            width: 40vw;
+            background-color: brown;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, repellat fuga neque magni, incidunt temporibus deleniti, 
+            nostrum nulla architecto ea explicabo sit beatae ut rem quidem harum itaque cupiditate fugit.
+        </div>
+        <div class="right">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro tempora dolores, non error deleniti soluta modi eius debitis excepturi 
+            magnam reprehenderit quis dolorem a recusandae! Possimus nemo veritatis reiciendis mollitia!
+        </div>
+    </div>
+</body>
+</html>
