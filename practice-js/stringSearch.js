@@ -6,7 +6,7 @@
 
 //lastIndexOf()
 //  let text = "Please locate where 'locate' occurs!";
-//  let result = text.lastIndexOf("locate")                21
+//  let result = text.lastIndexOf("locate")                //21
 //  console.log(result);
 
  //search()
@@ -16,17 +16,18 @@
 
 
 //match()
-//  let str = "hi hello bye"
+ // let str = "hi hello bye"
 //  console.log(str.charAt(3));
-// // let result = str.match("hi")            [ 'hi', index: 0, input: 'hi hello bye', groups: undefined ]
-// // console.log(result);
+ //let result = str.match("hi")
+// let result = str.match("hi")            [ 'hi', index: 0, input: 'hi hello bye', groups: undefined ]
+//console.log(result);
 // let result = str.match(/hello/)
 // console.log(result);
 
 
 //include
 // let str = "ministry of javascript"
-// console.log(str.includes("javascripttyertyert"));
+// console.log(str.includes("javascript"));
 
 
 //startWith()
